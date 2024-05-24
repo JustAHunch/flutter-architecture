@@ -30,7 +30,7 @@ class _CounterAppState extends State<CounterApp> {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      // 상위 위젯인 main 에서 사용할 컨트롤러 주입
+      // 4. 상위 위젯인 main 에서 사용할 컨트롤러 주입
       home: CounterView(
         counterController: CounterController(CounterModel()),
         counterModeController: CounterModeController(CounterModeModel()),

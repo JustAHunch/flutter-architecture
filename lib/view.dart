@@ -8,7 +8,7 @@ import 'model.dart';
 // - 단, View 내에 변수는 없어야 한다. (ex. counter)
 
 class CounterView extends StatefulWidget {
-  // 주입 받을 컨트롤러를 정의
+  // 3. 주입 받을 컨트롤러를 정의
   final CounterController counterController;
   final CounterModeController counterModeController;
 
