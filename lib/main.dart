@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mvc_starter/controller.dart';
+import 'package:mvvm_starter/view_model.dart';
 
 import 'model.dart';
 import 'view.dart';
@@ -32,8 +32,8 @@ class _CounterAppState extends State<CounterApp> {
       ),
       // 상위 위젯인 main 에서 사용할 컨트롤러 주입
       home: CounterView(
-        counterController: CounterController(CounterModel()),
-        counterModeController: CounterModeController(CounterModeModel()),
+        counterViewModel: CounterViewModel(CounterModel()),
+        counterModeViewModel: CounterModeViewModel(CounterModeModel()),
       ),
     );
   }
